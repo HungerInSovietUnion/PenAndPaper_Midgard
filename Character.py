@@ -16,7 +16,7 @@ print("Willkommen zur Charaktererstellung")
 print()
 print(Auswahl_Menu)
 
-while Aufwahlmenu != "0":
+while Auswahl_Menu != "0":
     print()
     menu_option = input("Bitte wähle auf:")
     print()
@@ -26,25 +26,29 @@ while Aufwahlmenu != "0":
         print("Charakter wird erstellt")
 
     #Füge Punkte hinzu
-    elif menu_option =="1":
+    elif menu_option == "1": 
         print("Punkte zu Attributen hinzufügen")
         print("Attribute zur Auswahl", Attribut_Namen)
         print("Punkte verfügbar:", PunkteZumVergeben)
         print()
-        Attribut_Namen = input("Attribut Name: "). lower()
-        if Attribut_Name in Attrivute:
-            value_points = int(input("Wert:"))
+        attribute_name = input("Attribute Name: ").lower()
+        if attribute_name in Attribute:
+            value_points = int(input("Value: "))
             if value_points <= PunkteZumVergeben and value_points >= 0:
                 PunkteZumVergeben -= value_points
-                attributes[Attribut_Namen] += value_points
-                print("Punkte hinzugefügt zu,", Attribut_Namen.title())
+                Attribute[attribute_name] += value_points
+                print("Points ADDED to,", attribute_name.title())
             else:
-                    print(value_points, "ist ein Falscher Wert, Versuch's erneut")
-            else:
-                    print(Attribut_Name,"existiert nicht")
+                print(value_points, "Falscher Wert")
+        else:
+            print("Leider existiert,", attribute_name, "nicht")
+
+    
+                    
     #Punkte wegnehmen
-    elif menu_option =="2":
-        print("Punkte von Attributen wegnehmen")
-        print("Attribute zu Auswahl", Attribut_Namen)
-        print("Punkte verfügbar:", PunkteZumVergeben)
+ 
+
+    #Menue anzeigen
+    elif menu_option == "3":
+            print(Auswahl_Menu)
         
