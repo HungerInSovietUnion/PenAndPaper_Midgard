@@ -2,7 +2,9 @@
 
 Alle Sachen für ein Nordisches Pen and Paper Abenteuer!
 
-Derzeit enthalten<b>
+<b>
+Derzeit enthalten
+  
                   Midgard als Map,
             
                   Verschiedene Gegner mit Zufallsberechnungen (Python),
@@ -19,4 +21,3 @@ In Planung
                   Valhalla und andere Maps
                   
                   Mehr Gegner
-    </b>
