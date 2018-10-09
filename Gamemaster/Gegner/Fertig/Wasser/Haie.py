@@ -15,7 +15,9 @@ print("--Schwimmgeschwindigkeit:", schwimm_geschwindigkeit) #Schwimmgeschwindigk
 print()
 print("--Stärke:", staerke)                                 #Stärke
 print()
-print("{------------------}")
+
+input("Beliebige Taste zum Beenden drücken...")
+
 
 
 

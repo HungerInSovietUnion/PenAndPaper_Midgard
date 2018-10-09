@@ -66,7 +66,7 @@ elif waffen == 'Kleinaxt':
     print()
     print("--Stärke:", staerke)
 
-    
+input("Beliebige Taste zum Beenden drücken...")
     
 
 

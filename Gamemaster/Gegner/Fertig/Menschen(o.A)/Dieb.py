@@ -37,6 +37,6 @@ else:
     print("--Gegner kann nicht schwimmen")
 
 
-
+input("Beliebige Taste zum Beenden drücken...")
 
 

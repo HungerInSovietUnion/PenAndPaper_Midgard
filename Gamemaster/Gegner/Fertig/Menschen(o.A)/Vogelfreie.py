@@ -77,7 +77,8 @@ else:                                                       #Bogen
     print("--Rüstung", ruestung)
     print()
     print("--Stärke:", staerke)
-    
+
+input("Beliebige Taste zum Beenden drücken...")
     
 
 

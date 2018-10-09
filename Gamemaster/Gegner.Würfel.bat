@@ -1,4 +1,6 @@
 @echo off
+title Gegener- und Wuerfelwahl
+color 3
 
 :Menu
 cls
@@ -16,6 +18,15 @@ if %eingabe% == 2 goto Wuerfel
 		pause
 		goto Menu
 			)
+			
+:Wuerfel
+cls
+
+echo Wuerfel.py eingbinden
+
+pause
+
+goto Menu
 
 :Gegner
 cls
@@ -236,10 +247,3 @@ pause
 goto Menu
 
 
-:Wuerfel
-cls
-echo start fuer Wuerfel.py
-
-pause
-
-goto Menu

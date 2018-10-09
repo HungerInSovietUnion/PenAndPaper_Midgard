@@ -20,6 +20,4 @@ print()
 print("{------------------}")
 
 
-
-
-
+input("Beliebige Taste zum Beenden drücken...")

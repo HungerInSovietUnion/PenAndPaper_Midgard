@@ -15,7 +15,8 @@ print("--Geschwindigkeit:", geschwindigkeit)                #Geschwindigkeit
 print()
 print("--Stärke:", staerke)                                 #Stärke
 print()
-print("{------------------}")
+
+input("Beliebige Taste zum Beenden dücken...")
 
 
 

@@ -90,5 +90,5 @@ else:
     print("--Leben:", leben)
 
 
-
+print("Beliebige Taste zum Beenden drücken...")
 

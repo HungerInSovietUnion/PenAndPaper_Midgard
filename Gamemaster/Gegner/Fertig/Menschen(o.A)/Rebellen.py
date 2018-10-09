@@ -47,7 +47,7 @@ elif waffen == 'Langschwert':                               #Dolch
     print("--Stärke:", staerke)
 
     
-    
+input("Beliebige Taste zum Beenden drücken...")
 
 
 

@@ -19,6 +19,6 @@ print("--Stärke:", staerke)                                 #Stärke
 print()
 print("{------------------}")
 
-
+input("Beliebige Taste zum Beenden dürcken...")
 
 

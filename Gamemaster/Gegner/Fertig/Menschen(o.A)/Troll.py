@@ -25,8 +25,7 @@ print("--Loot:", enemy_drop)                                #Loot
 print()
 
     
-    
-
+input("Beliebige Taste zum Beenden drücken...")
 
 
 

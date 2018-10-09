@@ -40,6 +40,7 @@ elif waffen == 'Dolch':                                     #Dolch
     print()
     print("--Stärke:", staerke)
 
+input("Beliebige Taste zum Beenden drücken...")
     
     
 

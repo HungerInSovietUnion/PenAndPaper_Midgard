@@ -53,7 +53,7 @@ elif skorpionart == ('große Skorpione'):
     print()
     print("--Leben:", leben)
 
-
+input("Beliebige Taste zum Beenden drücken...")
 
 
 
