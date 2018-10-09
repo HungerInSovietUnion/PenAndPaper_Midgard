@@ -3,6 +3,7 @@ import random
 leben = random.randint(5, 15)
 waffen = random.choice(['Dolch', 'Langschwert'])
 enemy_drop = random.choice(['Nordisches Langschwert', '1 Gold', '4 Gold', 'Dietrich', 'Stoffhelm', 'Pfeile', 'Nichts', 'Nichts', 'Nichts'])
+kann_schwimmen = random.choice(['Kann nicht schwimmen', 'Kann nicht schwimmen', 'Kann nicht schwimmen', 'Kann schwimmen'])
 
 print()
 print("Gegner wird erstellt...")
@@ -14,6 +15,15 @@ print()
 print("--Waffe:", waffen)                                   #Waffen-Anzeige
 print()
 print("--Loot:", enemy_drop)                                #Loot
+print()
+
+if kann_schwimmen == 'Kann schwimmen':
+    schwimm_geschwindigkeit = random.randint(1, 4)
+    print("--Schwimmgeschwindigkeit:", schwimm_geschwindigkeit) #Schwimmgeschwindigkeit
+
+else:
+    print("--Gegner kann nicht schwimmen")
+
 print()
 
 if waffen == 'Dolch':

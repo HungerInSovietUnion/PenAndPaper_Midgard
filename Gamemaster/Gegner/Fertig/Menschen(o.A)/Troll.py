@@ -15,6 +15,8 @@ print("--Leben:", leben)                                    #Leben
 print()
 print("--Waffe:", waffen)                                   #Waffen-Anzeige
 print()
+print("--Kann nicht schwimmen")                             #Trolle können nicht schwimmen
+print()
 print("--Stärke:", staerke)
 print()
 print("--Geschwindigkeit:", geschwindigkeit)  
