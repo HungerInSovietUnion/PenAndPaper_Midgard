@@ -1,15 +1,24 @@
 @echo off
-title Gegener- und Wuerfelwahl
-color 3
+title Hauptauswahlsmenu
 
 :Menu
 cls
-echo Was willst du tun?
-echo 1 Gegner generieren
-echo 2 Wuerfel waehlen
-echo 3 Attribute anzeigen (Excel)
-echo 4 Itemliste, Preise etc (Excel)
-echo 5 Charakteroverview (Excel)
+echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+echo.       			Hauptauswahlsmenu           
+echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+echo.
+echo.
+echo --1: Gegner generieren
+echo.
+echo --2: Wuerfel waehlen
+echo.
+echo --3: Attribute anzeigen (Excel)
+echo.
+echo --4: Itemliste, Preise etc (Excel)
+echo.
+echo --5: Charakteroverview (Excel)
+echo.
+echo --6: Karten und Infos 
 
 set /p eingabe=
 
@@ -18,6 +27,7 @@ if %eingabe% == 2 goto Wuerfel
 if %eingabe% == 3 goto Attribute
 if %eingabe% == 4 goto Itemliste_und_Preise
 if %eingabe% == 5 goto Charakteroverview
+if %eingabe% == 6 goto Karten und Infos
 
 ) else( 
 		echo Keine Korrekte eingabe
@@ -41,15 +51,21 @@ echo --Gegner Wahl--
 echo.
 echo Welche Art von Gegner möchtest du generieren?
 echo.
-echo 1 Menschen/Menschenartig
-echo 2 Tiere/Pflanzen
-echo 3 Wasser Gegner
+echo.
+echo --1: Menschen/Menschenartig
+echo.
+echo --2: Tiere/Pflanzen
+echo.
+echo --3: Wasser Gegner
+echo.
+echo --4: Zum Menu
 
 set /p eingabe=
 
 if %eingabe% == 1 goto Menschen/Menschenartig (
 if %eingabe% == 2 goto Tiere/Pflanzen
 if %eingabe% == 3 goto Wasser Gegner
+if %eingabe% == 4 goto Menu
 
 ) else(
 				echo keine Korrekte eingabe
@@ -87,18 +103,33 @@ echo Druecke eine beliebige Taste, um zum Menu zu gelangen...
 pause
 goto Menu
 
+:Karten und Infos
+cls
+echo --Karten und Infos werden geladen...--
+start Karten_Infos.bat
+echo.
+exit
 
 :Menschen/Menschenartig
 cls
 echo --Menschen/Menschenartig--
 echo.
+echo.
 echo Gegenerwahl
-echo 1 Dieb
-echo 2 ElbenKrieger
-echo 3 Rebellen
-echo 4 Troll
-echo 5 Vikinger
-echo 6 Vogelfreie
+echo.
+echo --1: Dieb
+echo.
+echo --2: ElbenKrieger
+echo.
+echo --3: Rebellen
+echo.
+echo --4: Troll
+echo.
+echo --5: Vikinger
+echo.
+echo --6: Vogelfreie
+echo.
+echo --7: Zum Menu 
 
 set /p eingabe=
 
@@ -108,6 +139,7 @@ if %eingabe% == 3 goto Rebellen
 if %eingabe% == 4 goto Troll
 if %eingabe% == 5 goto Vikinger
 if %eingabe% == 6 goto Vogelfreie
+if %eingabe% == 7 goto Menu
 
 ) else(
 				echo keine Korrekte eingabe
@@ -119,14 +151,24 @@ if %eingabe% == 6 goto Vogelfreie
 cls
 echo --Tiere/Pflanzen--
 echo.
+echo.
 echo Gegenerwahl
-echo 1 Einhorn
-echo 2 Eisbaeren
-echo 3 Ent
-echo 4 Riesenskorpion
-echo 5 Spinnen
-echo 6 Wildschwein
-echo 7 Wolf
+echo.
+echo --1: Einhorn
+echo.
+echo --2: Eisbaeren
+echo.
+echo --3: Ent
+echo.
+echo --4: Riesenskorpion
+echo.
+echo --5: Spinnen
+echo.
+echo --6: Wildschwein
+echo.
+echo --7: Wolf
+echo.
+echo --8: Zum Menu 
 
 set /P eingabe= 
 
@@ -137,7 +179,8 @@ if %eingabe% == 4 goto Riesenskorpion
 if %eingabe% == 5 goto Spinnen
 if %eingabe% == 6 goto Wildschwein
 if %eingabe% == 7 goto Wolf
-					
+if %eingabe% == 8 goto Menu
+
 ) else(
 				echo keine Korrekte eingabe
 				pause
@@ -148,14 +191,20 @@ if %eingabe% == 7 goto Wolf
 cls
 echo --Wasser--
 echo.
+echo.
 echo Gegenerwahl
-echo 1 Haie
-echo 2 Seeschlange
+echo.
+echo --1: Haie
+echo.
+echo --2: Seeschlange
+echo.
+echo --3: Zum Menu
 
 set /P eingabe=
 
 if %eingabe% == 1 goto Haie					(
 if %eingabe% == 2 goto Seeschlange
+if %eingabe% == 3 goto Menu
 											
 ) else(
 				echo keine Korrekte eingabe
