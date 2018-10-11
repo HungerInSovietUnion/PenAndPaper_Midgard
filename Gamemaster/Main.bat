@@ -1,4 +1,6 @@
 @echo off
+color B0
+
 title Hauptauswahlsmenu
 
 :Menu
