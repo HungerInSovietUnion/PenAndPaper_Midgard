@@ -20,7 +20,9 @@ echo --4: Itemliste, Preise etc (Excel)
 echo.
 echo --5: Charakteroverview (Excel)
 echo.
-echo --6: Karten und Infos 
+echo --6: Karten und Infos
+echo.
+echo --7: Exit
 
 set /p eingabe=
 
@@ -30,6 +32,7 @@ if %eingabe% == 3 goto Attribute
 if %eingabe% == 4 goto Itemliste_und_Preise
 if %eingabe% == 5 goto Charakteroverview
 if %eingabe% == 6 goto Karten und Infos
+if %eingabe% == 7 goto ExitMenu
 
 ) else( 
 		echo Keine Korrekte eingabe
@@ -117,7 +120,7 @@ cls
 echo --Menschen/Menschenartig--
 echo.
 echo.
-echo Gegenerwahl
+echo Gegnerwahl
 echo.
 echo --1: Dieb
 echo.
@@ -154,7 +157,7 @@ cls
 echo --Tiere/Pflanzen--
 echo.
 echo.
-echo Gegenerwahl
+echo Gegnerwahl
 echo.
 echo --1: Einhorn
 echo.
@@ -194,7 +197,7 @@ cls
 echo --Wasser--
 echo.
 echo.
-echo Gegenerwahl
+echo Gegnerwahl
 echo.
 echo --1: Haie
 echo.
@@ -215,9 +218,13 @@ if %eingabe% == 3 goto Menu
 			)
 
 
+:MenuExit
+exit
+
+
 :Dieb
 cls
-start \Gegener\Fertig\Menschen(o.A)\Dieb.py
+start Gegner\Fertig\Menschen(o.A)\Dieb.py
 
 pause
 
@@ -225,7 +232,7 @@ goto Menu
 
 :ElbenKrieger
 cls
-start \Gegener\Fertig\Menschen(o.A)\ElbenKrieger.py
+start Gegner\Fertig\Menschen(o.A)\ElbenKrieger.py
 
 pause
 
@@ -233,7 +240,7 @@ goto Menu
 
 :Rebellen
 cls
-start \Gegener\Fertig\Menschen(o.A)\Rebellen.py
+start Gegner\Fertig\Menschen(o.A)\Rebellen.py
 
 pause
 
@@ -241,7 +248,7 @@ goto Menu
 
 :Troll
 cls
-start \Gegener\Fertig\Menschen(o.A)\Troll.py
+start Gegner\Fertig\Menschen(o.A)\Troll.py
 
 pause
 
@@ -249,7 +256,7 @@ goto Menu
 
 :Vikinger
 cls
-start \Gegener\Fertig\Menschen(o.A)\Vikinger.py
+start Gegner\Fertig\Menschen(o.A)\Vikinger.py
 
 pause
 
@@ -257,7 +264,7 @@ goto Menu
 
 :Vogelfreie
 cls
-start \Gegener\Fertig\Menschen(o.A)\Vogelfreie.py
+start Gegner\Fertig\Menschen(o.A)\Vogelfreie.py
 
 pause
 
@@ -265,7 +272,7 @@ goto Menu
 
 :Einhorn
 cls
-start \Gegener\Fertig\Tiere_Pflanzen\Einhorn.py
+start Gegner\Fertig\Tiere_Pflanzen\Einhorn.py
 
 pause
 
@@ -273,7 +280,7 @@ goto Menu
 
 :Eisbaeren
 cls
-start \Gegener\Fertig\Tiere_Pflanzen\Eisbaeren.py
+start Gegner\Fertig\Tiere_Pflanzen\Eisbaeren.py
 
 pause 
 
@@ -281,7 +288,7 @@ goto Menu
 
 :Ent
 cls
-start \Gegener\Fertig\Tiere_Pflanzen\Ent.py
+start Gegner\Fertig\Tiere_Pflanzen\Ent.py
 
 pause
 
@@ -289,7 +296,7 @@ goto Menu
 
 :Riesenskorpion
 cls
-start \Gegener\Fertig\Tiere_Pflanzen\Riesenskorpion.py
+start Gegner\Fertig\Tiere_Pflanzen\Riesenskorpion.py
 
 pause
 
@@ -297,7 +304,7 @@ goto Menu
 
 :Spinnen
 cls
-start \Gegener\Fertig\Tiere_Pflanzen\Spinnen.py
+start Gegner\Fertig\Tiere_Pflanzen\Spinnen.py
 
 pause
 
@@ -305,7 +312,7 @@ goto Menu
 
 :Wildschwein
 cls
-start \Gegener\Fertig\Tiere_Pflanzen\Wildschwein.py
+start Gegner\Fertig\Tiere_Pflanzen\Wildschwein.py
 
 pause
 
@@ -313,7 +320,7 @@ goto Menu
 
 :Wolf
 cls
-start \Gegener\Fertig\Tiere_Pflanzen\Wolf.py
+start Gegner\Fertig\Tiere_Pflanzen\Wolf.py
 
 pause
 
@@ -321,7 +328,7 @@ goto Menu
 
 :Haie
 cls
-start \Gegener\Fertig\Wasser\Haie.py
+start Gegner\Fertig\Wasser\Haie.py
 
 pause
 
@@ -329,7 +336,7 @@ goto Menu
 
 :Seeschlange
 cls
-start \Gegener\Fertig\Wasser\Seeschlange.py
+start Gegner\Fertig\Wasser\Seeschlange.py
 
 pause
 
