@@ -49,6 +49,5 @@ if %eingabe% == 1 goto Jomsborg (
 cls
 echo.
 echo Informationen zu Jomsborg
-start  Map/Midgard/Skandinavien/Jomsborg/Jomsborg.html
-
-goto Menu
+start Map/Midgard/Skandinavien/Jomsborg/Event.bat
+exit

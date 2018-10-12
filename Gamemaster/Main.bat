@@ -218,7 +218,7 @@ if %eingabe% == 3 goto Menu
 			)
 
 
-:MenuExit
+:Menu_Exit
 exit
 
 
