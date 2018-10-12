@@ -7,13 +7,16 @@ echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 echo.       			Hauptauswahlsmenu           
 echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 echo.
-echo --1: Maps
+echo --1: Maps:
 echo.
-echo --2: Zum Menu
+echo --2 Events in den Welten:
+echo.
+echo --3: Zum Menu
 
 set /p eingabe=
 
 if %eingabe% == 1 goto Maps  ( 
+if %eingabe% == 2 goto Events
 if %eingabe% == 2 goto Menu
 
 ) else( 
@@ -50,5 +53,11 @@ cls
 echo.
 echo Informationen zu Jomsborg
 start  Map/Midgard/Skandinavien/Jomsborg/Jomsborg.html
+
+goto Menu
+
+:Events
+cls
+start Event.bat
 
 goto Menu
