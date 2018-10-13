@@ -2,6 +2,8 @@
 
 curl https://www.python.org/ftp/python/3.7.0/python-3.7.0.exe -o python-3.7.0.exe
 
+pause
+
 start python-3.7.0.exe
 
 pause
